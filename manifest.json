@@ -4,6 +4,10 @@
   "name": "unbias.cc",
   "description": "This extension allows the user to be aware of the biases encountered online",
   "version": "1.0",
+  "icons": {
+    "16": "unbias_icon.png",
+    "128": "unbias_icon.png"
+  },
 
   "content_scripts" : [
     {
