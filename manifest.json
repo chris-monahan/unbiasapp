@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "unbias.cc",
+  "description": "This extension allows the user to be aware of the biases encountered online",
+  "version": "1.0",
+
+  "content_scripts" : [
+    {
+      "matches" : ["*://en.wikipedia.org/*"],
+      "css" : ["unbias.css"],
+      "js" : ["vendor/jquery-3.2.1.min.js", "vendor/mustache.min.js", "wikipedia/wikipage.js",  "wikipedia/wikiPronounCount.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "templates/*"
+  ],
+
+
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
