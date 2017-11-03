@@ -1,0 +1,19 @@
+
+
+#unbias-pronoun-container {
+  background-color: rgb(51, 51, 51);
+  font-weight: bold;
+  font-style: normal;
+  padding:8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+#unbias-pronoun-display .unbias.pronoun-entry{
+   display:inline-block;
+   margin-left: 5px;
+   margin-right: 5px;
+}

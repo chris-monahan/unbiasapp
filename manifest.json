@@ -12,7 +12,7 @@
   "content_scripts" : [
     {
       "matches" : ["*://en.wikipedia.org/*"],
-      "css" : ["unbias.css"],
+      "css" : ["css/unbias.css"],
       "js" : ["vendor/jquery-3.2.1.min.js", "vendor/mustache.min.js", "wikipedia/wikipage.js",  "wikipedia/wikiPronounCount.js"]
     }
   ],

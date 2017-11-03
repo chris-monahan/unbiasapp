@@ -1,4 +1,29 @@
-<div id="unbias-pronoun-display">
-  <h1>Pronoun count by Unbias</h1>
-  {{#pronounCounts}}<span class='unbias pronoun-entry'>{{identifier}} : <span class='unbias usage-count'>{{count}}</span></span>{{/pronounCounts}}
+<div id="unbias-pronoun-container">
+  <style>
+
+    body * {
+      font-family: ComfortaaBold, sans-serif !important;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      border-bottom: none;
+    }
+
+    #two_thirds{
+      min-width: 69%;
+      display: inline-block;
+      padding-right: 16px;
+    }
+
+  </style>
+
+  <div>
+    <h1>Your bias</h1>
+    <p><small>by unbias.cc</small></p>
+  </div>
+
+    {{#pronounCounts}}<div>
+    <h2 class='unbias pronoun-entry'>{{identifier}} : {{count}}</h2>
+    </div>{{/pronounCounts}}
+
 </div>
