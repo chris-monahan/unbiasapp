@@ -9,21 +9,22 @@
       border-bottom: none;
     }
 
-    #two_thirds{
-      min-width: 69%;
-      display: inline-block;
-      padding-right: 16px;
+    #logo {
+      margin-top: -5px;
     }
 
+    #your-bias {
+      margin-bottom: 0px;
+    }
   </style>
 
   <div>
-    <h1>Your bias</h1>
-    <p><small>by unbias.cc</small></p>
+    <h1 id="your-bias" class="my-text">Your bias</h1>
+    <p id="logo"><small>by unbias.cc</small></p>
   </div>
 
     {{#pronounCounts}}<div>
-    <h2 class='unbias pronoun-entry'>{{identifier}} : {{count}}</h2>
+    <h2 class="my-text">{{identifier}} : {{count}} %</h2>
     </div>{{/pronounCounts}}
 
 </div>

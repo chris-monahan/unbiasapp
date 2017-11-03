@@ -67,11 +67,18 @@ wikiPage = (function () {
 
 	my.getPronounDataAsArray = function(wrap){
 		var pronounData = my.getPronounData();
+		var total = 0;
+		for (var i=0; i<pronounData.length; i++){
+			total = total + pronounData[i];
+		}
+
 		var array = $.map(pronounData, function(value, index) {
-    	return [value];
+			//console.log(pronounData["count"]);
+//			return [Math.round(value*total/100)];
+			return[value];
 		});
 		console.log("Pronoun data as array");
-		console.log(array);
+
 
 		if(wrap === true){
 			return {pronounCounts : array};

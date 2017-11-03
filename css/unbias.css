@@ -4,7 +4,7 @@
   background-color: rgb(51, 51, 51);
   font-weight: bold;
   font-style: normal;
-  padding:8px;
+  padding:3px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -16,4 +16,16 @@
    display:inline-block;
    margin-left: 5px;
    margin-right: 5px;
+}
+
+#logo {
+  margin-top: -5px;
+}
+
+#your-bias {
+  margin-bottom: 0px;
+}
+
+.my-text{
+  margin-top: 0.2em;
 }
