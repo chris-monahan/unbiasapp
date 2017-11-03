@@ -62,7 +62,37 @@ wikiPage = (function () {
 
 	my.getPronounData = function(){
 		my.searchPronouns();
-		return pronounLists;
+
+		var pronounData = pronounLists;
+		var totalCount = 0;
+
+		$.each(pronounData, function(key, value){
+			value.count = parseInt(value.count);
+			totalCount = totalCount + value.count;
+		});
+
+		$.each(pronounData, function(key, value){
+			//console.log("Adding percentage");
+			//console.log(value);
+			//console.log(totalCount);
+
+			if(totalCount !== 0){
+				value.fullPercentage = (value.count / totalCount) * 100;
+				value.percentage = Math.round(value.fullPercentage * 100) / 100
+
+			} else {
+				value.fullPercentage = 0;
+				value.percentage = 0;
+			}
+
+
+			//console.log("percentage added");
+			//console.log(value);
+		});
+
+
+
+		return pronounData;
 	}
 
 	my.getPronounDataAsArray = function(wrap){

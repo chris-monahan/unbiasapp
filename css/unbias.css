@@ -1,31 +1,57 @@
 
 
-#unbias-pronoun-container {
+#unbias-pronouns * {
+  font-family: ComfortaaBold, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  border-bottom: none;
+}
+
+#unbias-pronouns #logo {
+  margin-top: -5px;
+}
+
+#unbias-pronouns #your-bias {
+  margin-bottom: 0px;
+}
+
+#unbias-pronouns #logo-aside{
+  position:absolute;
+  left:20px;
+}
+#unbias-pronouns {
+  position:relative;
   background-color: rgb(51, 51, 51);
   font-weight: bold;
   font-style: normal;
   padding:3px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: baseline;
+
 }
 
-#unbias-pronoun-display .unbias.pronoun-entry{
+#unbias-pronouns #pronoun-counts{
    display:inline-block;
-   margin-left: 5px;
+   width:calc(100% - 105px);
+   margin-left: 100px;
    margin-right: 5px;
+   text-align:center;
 }
 
-#logo {
+#unbias-pronouns .pronoun-entry{
+  display:inline-block;
+  margin-left:5%;
+  margin-right:5%;
+
+}
+
+#unbias-pronouns #logo {
   margin-top: -5px;
 }
 
-#your-bias {
+#unbias-pronouns #your-bias {
   margin-bottom: 0px;
 }
 
-.my-text{
+#unbias-pronouns .my-text{
   margin-top: 0.2em;
 }

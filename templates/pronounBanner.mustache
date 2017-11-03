@@ -1,30 +1,20 @@
-<div id="unbias-pronoun-container">
+<div id="unbias-pronouns">
   <style>
 
-    body * {
-      font-family: ComfortaaBold, sans-serif !important;
-      font-weight: bold;
-      text-decoration: none;
-      color: white;
-      border-bottom: none;
-    }
-
-    #logo {
-      margin-top: -5px;
-    }
-
-    #your-bias {
-      margin-bottom: 0px;
-    }
   </style>
 
-  <div>
+  <div id="logo-aside">
     <h1 id="your-bias" class="my-text">Your bias</h1>
     <p id="logo"><small>by unbias.cc</small></p>
   </div>
 
-    {{#pronounCounts}}<div>
-    <h2 class="my-text">{{identifier}} : {{count}} %</h2>
-    </div>{{/pronounCounts}}
+  <div id="pronoun-counts">
+    {{#pronounCounts}}
+    <div class="pronoun-entry" title="{{fullPercentage}}%">
+      <h2 class="my-text pronoun-percent">{{identifier}} : {{percentage}} %</h2>
+      <p class="total pronoun-total">Total : {{count}}</p>
+    </div>
+    {{/pronounCounts}}
+  </div>
 
 </div>
